@@ -19,3 +19,6 @@
   --color-primary-900: #27263f;
   --color-primary-950: #1f1e32;
 }
+body {
+  font-family: "Encode Sans Expanded", sans-serif;
+}

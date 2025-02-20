@@ -1,9 +1,14 @@
-import React from "react";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   return (
-    <div className=" bg-primary-500 flex items-center text-5xl font-bold text-center justify-center h-screen">
-      We are still working on the site, wait...
-    </div>
+    <>
+      <Helmet>
+        <title> Home </title>
+      </Helmet>
+      <div className="  w-full container mx-auto  text-5xl font-bold px-4 h-screen">
+        We are still working on the site, wait...
+      </div>
+    </>
   );
 }

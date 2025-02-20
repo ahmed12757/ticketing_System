@@ -76,6 +76,7 @@ export default function Signup() {
         },
       };
       let { data } = await axios.request(options);
+      console.log(data);
 
       if (data.message === "created successfully") {
         toast.success("user created Successfully");
