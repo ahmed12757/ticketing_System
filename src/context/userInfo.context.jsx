@@ -10,6 +10,8 @@ export default function UserInfoProvider({ children }) {
   const [email, setEmail] = useState(null);
   let { token } = useContext(UserContext);
   async function getInformation() {
+    console.log("h1");
+
     try {
       const options = {
         url: "http://localhost:9000/user/profileInfo",
@@ -31,7 +33,17 @@ export default function UserInfoProvider({ children }) {
   getInformation();
 
   return (
-    <UserInfoContext.Provider value={{ name, userImage, email }}>
+    <UserInfoContext.Provider
+      value={{
+        name,
+        userImage,
+        email,
+        setImage,
+        setEmail,
+        setName,
+        getInformation,
+      }}
+    >
       {children}
     </UserInfoContext.Provider>
   );

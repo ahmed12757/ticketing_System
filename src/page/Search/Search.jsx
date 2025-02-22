@@ -2,11 +2,15 @@ import React, { useContext } from "react";
 import { TicketContext } from "../../context/Ticket.comntext";
 import TicketCard from "../../components/TicketCard/TicketCard";
 import Loader from "../../components/Loding/Loding";
+import { Helmet } from "react-helmet";
 
 export default function Search() {
   const { searchTicket, search } = useContext(TicketContext);
   return (
     <>
+      <Helmet>
+        <title>Search</title>
+      </Helmet>
       <div className=" mt-18 h-screen">
         <div className=" flex justify-center items-center text-gray-50">
           <input
