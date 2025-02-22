@@ -13,6 +13,9 @@ import Logout from "./components/Logout/Logout";
 import UserProvider from "./context/User.context";
 import Setting from "./page/Setting/Setting";
 import UserInfoProvider from "./context/userInfo.context";
+import TicketProvider from "./context/Ticket.comntext";
+import Ticket from "./page/Ticket/Ticket";
+import Search from "./page/Search/Search";
 
 function App() {
   const router = createBrowserRouter([
@@ -28,6 +31,8 @@ function App() {
         { index: true, element: <Home /> },
         { path: "home", element: <Home /> },
         { path: "setting", element: <Setting /> },
+        { path: "ticket", element: <Ticket /> },
+        { path: "search", element: <Search /> },
       ],
     },
     {
@@ -51,7 +56,9 @@ function App() {
     <>
       <UserProvider>
         <UserInfoProvider>
-          <RouterProvider router={router} />
+          <TicketProvider>
+            <RouterProvider router={router} />
+          </TicketProvider>
         </UserInfoProvider>
       </UserProvider>
       <Toaster position="top-right" />

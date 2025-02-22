@@ -55,17 +55,17 @@ export default function ForgetPassword() {
         </Helmet>
         <div className="flex  h-screen items-center justify-center">
           <div className="grid  w-[100%] mx-10  grid-cols-12   shadow-md shadow-primary-900">
-            <div className=" col-span-12 bg-primary-700  md:col-span-7 py-6 px-2">
+            <div className=" col-span-12 bg-gray-200  md:col-span-7 py-6 px-2">
               <div className="lg:px-11 md:px-4 px-4 sm:px-10  flex items-center space-y-8 justify-center flex-col h-full">
                 <form
                   action=""
-                  className=" space-y-3 w-full gap-x-4 mb-2 text-gray-100 grid grid-cols-12 "
+                  className=" space-y-3 w-full gap-x-4 mb-2 text-primary-300 grid grid-cols-12 "
                   onSubmit={formik.handleSubmit}
                 >
-                  <h1 className="text-gray-200 col-span-12 uppercase text-xl font-semibold text-center">
+                  <h1 className="text-primary-500 col-span-12 uppercase text-xl font-semibold text-center">
                     Forgot Your Password?{" "}
                   </h1>
-                  <p className="text-gray-300 col-span-12  text-sm font-normal text-center">
+                  <p className="text-primary-500 col-span-12  text-sm font-normal text-center">
                     Just enter your email address below and we'll send you a
                     link via email to reset your password!
                   </p>
@@ -75,7 +75,7 @@ export default function ForgetPassword() {
                       type="email"
                       autoComplete="off"
                       placeholder="Enter your email"
-                      className="w-full focus:outline-0 px-2 my-2 py-2  focus:!bg-transparent focus:border-1 border rounded-lg border-primary-100 placeholder:text-gray-300"
+                      className="w-full focus:outline-0 px-2 my-2 py-2  focus:!bg-transparent focus:border-1 border rounded-lg border-primary-100 placeholder:text-primary-300"
                       name="email"
                       value={formik.values.email}
                       onBlur={formik.handleBlur}
@@ -95,7 +95,7 @@ export default function ForgetPassword() {
                     Send Reset Instruction
                   </button>
                 </form>
-                <p className="text-gray-200 text-sm  font-normal ">
+                <p className="text-primary-500 text-sm  font-normal ">
                   Remembered password?{" "}
                   <span className="text-blue-500 ">
                     {"  "}
@@ -106,7 +106,7 @@ export default function ForgetPassword() {
                 </p>
               </div>
             </div>
-            <div className=" hidden bg-primary-600   md:block px-2  col-span-5 ">
+            <div className=" hidden bg-gray-100  md:block px-2  col-span-5 ">
               <img
                 src={background}
                 alt=""

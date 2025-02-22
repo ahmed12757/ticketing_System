@@ -99,13 +99,13 @@ export default function Signup() {
         </Helmet>
         <div className="flex  h-screen items-center justify-center">
           <div className="grid  w-[100%] mx-10  grid-cols-12   shadow-md shadow-primary-900">
-            <div className=" col-span-12 bg-primary-700  md:col-span-7 py-6 px-2">
+            <div className=" col-span-12 bg-gray-200  md:col-span-7 py-6 px-2">
               <div className="lg:px-11 md:px-4 px-4 sm:px-10  flex items-center space-y-8 justify-center flex-col h-full">
                 <form
-                  className=" space-y-3 w-full gap-x-4 mb-2 text-gray-100 grid grid-cols-12 "
+                  className=" space-y-3 w-full gap-x-4 mb-2 text-primary-300 grid grid-cols-12 "
                   onSubmit={formik.handleSubmit}
                 >
-                  <h1 className="text-gray-200 col-span-12 text-xl font-semibold text-center">
+                  <h1 className="text-primary-500 col-span-12 text-xl font-semibold text-center">
                     Create Account!{" "}
                     <span className="">
                       <i class="fa-regular fa-circle-user"></i>
@@ -126,7 +126,7 @@ export default function Signup() {
                       type="text"
                       autoComplete="off"
                       placeholder="Enter your name"
-                      className="w-full focus:outline-0 px-2 my-2 py-2  focus:!bg-transparent focus:border-1 border rounded-lg border-primary-100 placeholder:text-gray-300"
+                      className="w-full focus:outline-0 px-2 my-2 py-2  focus:!bg-transparent focus:border-1 border rounded-lg border-primary-100 placeholder:text-primary-300"
                       name="name"
                       value={formik.values.name}
                       onBlur={formik.handleBlur}
@@ -134,7 +134,7 @@ export default function Signup() {
                     />
                   </div>
                   {formik.errors.name && formik.touched.name && (
-                    <p className="text-gray-100  col-span-12 font-semibold">
+                    <p className="text-primary-400  col-span-12 font-semibold">
                       *{formik.errors.name}
                     </p>
                   )}
@@ -144,7 +144,7 @@ export default function Signup() {
                       type="email"
                       autoComplete="off"
                       placeholder="Enter your email"
-                      className="w-full focus:outline-0 px-2 my-2 py-2  focus:!bg-transparent focus:border-1 border rounded-lg border-primary-100 placeholder:text-gray-300"
+                      className="w-full focus:outline-0 px-2 my-2 py-2  focus:!bg-transparent focus:border-1 border rounded-lg border-primary-100 placeholder:text-primary-300"
                       name="email"
                       value={formik.values.email}
                       onBlur={formik.handleBlur}
@@ -152,7 +152,7 @@ export default function Signup() {
                     />
                   </div>
                   {formik.errors.email && formik.touched.email && (
-                    <p className="text-gray-100  col-span-12 font-semibold">
+                    <p className="text-primary-400  col-span-12 font-semibold">
                       *{formik.errors.email}
                     </p>
                   )}
@@ -163,7 +163,7 @@ export default function Signup() {
                       id="password"
                       autoComplete="off"
                       placeholder="password"
-                      className="w-full focus:outline-0 px-2 my-2 py-2  focus:!bg-transparent focus:border-1 border rounded-lg border-primary-100 placeholder:text-gray-300"
+                      className="w-full focus:outline-0 px-2 my-2 py-2  focus:!bg-transparent focus:border-1 border rounded-lg border-primary-100 placeholder:text-primary-300"
                       name="password"
                       value={formik.values.password}
                       onBlur={formik.handleBlur}
@@ -185,7 +185,7 @@ export default function Signup() {
                       placeholder="Confirm Password"
                       type={showPassword ? "text" : "password"}
                       autoComplete="off"
-                      className="w-full focus:outline-0 px-2 my-2 py-2 focus:!bg-transparent focus:border-1 border rounded-lg border-primary-100 placeholder:text-gray-300"
+                      className="w-full focus:outline-0 px-2 my-2 py-2 focus:!bg-transparent focus:border-1 border rounded-lg border-primary-100 placeholder:text-primary-300"
                       name="confirmPassword"
                       value={formik.values.confirmPassword}
                       onBlur={formik.handleBlur}
@@ -202,14 +202,14 @@ export default function Signup() {
                   </div>
                   <div className=" col-span-6">
                     {formik.errors.password && formik.touched.password && (
-                      <p className="text-gray-100 w-full font-semibold">
+                      <p className="text-primary-400 w-full font-semibold">
                         *{formik.errors.password}
                       </p>
                     )}
                   </div>
                   {formik.errors.confirmPassword &&
                     formik.touched.confirmPassword && (
-                      <p className="text-gray-100 col-span-6 font-semibold">
+                      <p className="text-primary-400 col-span-6 font-semibold">
                         *{formik.errors.confirmPassword}
                       </p>
                     )}
@@ -220,7 +220,7 @@ export default function Signup() {
                     Signup
                   </button>
                 </form>
-                <p className="text-gray-200 text-sm  font-normal ">
+                <p className="text-primary-400text-sm  font-normal ">
                   Already a member?{" "}
                   <span className="text-blue-500 ">
                     {"  "}
@@ -231,7 +231,7 @@ export default function Signup() {
                 </p>
               </div>
             </div>
-            <div className=" hidden bg-primary-600   md:block px-2  col-span-5 ">
+            <div className=" hidden bg-gray-100   md:block px-2  col-span-5 ">
               <img
                 src={background}
                 alt=""

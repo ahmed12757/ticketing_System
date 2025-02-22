@@ -25,7 +25,7 @@ export default function Said() {
               </NavLink>
             </div>
             <div className="tickets relative group/tickets w-fit text-black hover:text-gray-50 hover:transition-colors hover:duration-75 duration-75 cursor-pointer after:w-4 after:h-4 after:bg-primary-200  after:absolute after:top-[26px] after:rotate-45 after:right-[9%]  after:opacity-0 hover:after:opacity-100">
-              <NavLink to={``}>
+              <NavLink to={`/ticket`}>
                 <i class="fa-solid fa-ticket"></i>{" "}
                 <p
                   className={`font-normal flex justify-center items-center text-md h-0 text-gray-50 group-hover/tickets:h-8 md:group-hover/tickets:py-1 group-hover/tickets:transition-all group-hover/tickets:duration-300 duration-300   overflow-hidden text-center w-fit px-2 rounded-lg translate-x-[-10%] py-0 bg-primary-200 absolute top-[30px] z-10  `}
@@ -34,6 +34,17 @@ export default function Said() {
                 </p>
               </NavLink>
             </div>
+            <div className="search relative group/tickets w-fit text-black hover:text-gray-50 hover:transition-colors hover:duration-75 duration-75 cursor-pointer after:w-4 after:h-4 after:bg-primary-200  after:absolute after:top-[26px] after:rotate-45 after:right-[9%]  after:opacity-0 hover:after:opacity-100">
+              <NavLink to={`/search`}>
+                <i class="fa-solid fa-magnifying-glass"></i>{" "}
+                <p
+                  className={`font-normal flex justify-center items-center text-md h-0 text-gray-50 group-hover/tickets:h-8 md:group-hover/tickets:py-1 group-hover/tickets:transition-all group-hover/tickets:duration-300 duration-300   overflow-hidden text-center w-fit px-2 rounded-lg translate-x-[-10%] py-0 bg-primary-200 absolute top-[30px] z-10  `}
+                >
+                  Search
+                </p>
+              </NavLink>
+            </div>
+
             {/* setting */}
             <div className="setting relative group/setting w-fit text-black hover:text-gray-50 hover:transition-colors hover:duration-75 duration-75 cursor-pointer after:w-4 after:h-4 after:bg-primary-200  after:absolute after:top-[29px] after:rotate-45 after:right-[9%]  after:opacity-0 hover:after:opacity-100 ">
               <NavLink to={`/setting`}>
